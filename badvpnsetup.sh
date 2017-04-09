@@ -4,27 +4,27 @@ if [ -f "/usr/local/bin/badvpn-udpgw" ]
 then
 	tput setaf 3 ; tput bold ; echo ""
 	echo ""
-	echo "O BadVPN já foi instalado com sucesso."
-	echo "Para executar, crie uma sessão screen"
+	echo "O BadVPN jÃ¡ foi instalado com sucesso."
+	echo "Para executar, crie uma sessÃ£o screen"
 	echo "E execute o comando:"
 	echo ""
 	echo "badudp"
 	echo ""
-	echo "E deixe a sessão screen rodando em segundo plano."
+	echo "E deixe a sessÃ£o screen rodando em segundo plano."
 	echo "" ; tput sgr0
 	exit
 else
 tput setaf 2 ; tput bold ; echo ""
-echo "Este é um script que compila e instala automaticamente o programa"
+echo "Este Ã© um script que compila e instala automaticamente o programa"
 echo "BadVPN em servidores Debian e Ubuntu para ativar o encaminhamento UDP"
 echo "na porta 7300, usado por programas como HTTP Injector da Evozi."
-echo "Permitindo assim a utilização do protocolo UDP para jogos online,"
+echo "Permitindo assim a utilizaÃ§Ã£o do protocolo UDP para jogos online,"
 echo "chamadas VoIP e outras coisas interessantes."
 echo "" ; tput sgr0
 read -p "Deseja continuar? [s/n]: " -e -i n resposta
 if [[ "$resposta" = 's' ]]; then
 	echo ""
-	echo "A instalação pode demorar bastante... seja paciente!"
+	echo "A instalaÃ§Ã£o pode demorar bastante... seja paciente!"
 	sleep 3
 	apt-get update -y
 	apt-get install screen wget gcc build-essential g++ make -y
@@ -54,12 +54,12 @@ if [[ "$resposta" = 's' ]]; then
 	tput setaf 3 ; tput bold ; echo ""
 	echo ""
 	echo "BadVPN instalado com sucesso."
-	echo "Para usar, crie uma sessão screen"
+	echo "Para usar, crie uma sessÃ£o screen"
 	echo "E execute o comando:"
 	echo ""
 	echo "badudp"
 	echo ""
-	echo "E deixe a sessão screen rodando em segundo plano."
+	echo "E deixe a sessÃ£o screen rodando em segundo plano."
 	echo "" ; tput sgr0
 	exit
 else 
